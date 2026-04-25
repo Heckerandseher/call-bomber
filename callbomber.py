@@ -5,22 +5,10 @@ import uuid
 import json
 import requests
 import os
-from mechanize import Browser
-from user_agent import generate_user_agent
 from concurrent.futures import ThreadPoolExecutor
 import os,random,sys,time
-os.system("pkg install espeak")
 os.system("clear")
-from os import system as _darq_
-def lo(word):
-    darq = ["[\x1b[1;91m■\x1b[0m□□□□□□□□□]","[\x1b[1;92m■■\x1b[0m□□□□□□□□]", "[\x1b[1;93m■■■\x1b[0m□□□□□□□]", "[\x1b[1;94m■■■■\x1b[0m□□□□□□]", "[\x1b[1;95m■■■■■\x1b[0m□□□□□]", "[\x1b[1;96m■■■■■■\x1b[0m□□□□]", "[\x1b[1;97m■■■■■■■\x1b[0m□□□]", "[\x1b[1;98m■■■■■■■■\x1b[0m□□]", "[\x1b[1;99m■■■■■■■■■\x1b[0m□]", "[\x1b[1;910m■■■■■■■■■■\x1b[0m]"]
-    for i in range(5):
-        for x in range(len(darq)):
-            sys.stdout.write(('\r{}{}').format(str(word), darq[x]))
-            time.sleep(0.01)
-            sys.stdout.flush()
-lo(" \x1b[1;36m        Api İle Bağlantı Kuruluyor...")
-os.system('clear')
+
 E = '\033[1;31m'
 G = '\033[1;35m'
 Z = '\033[1;31m'
@@ -126,7 +114,7 @@ def numaralari_isle(numaralar):
             for numara in numaralar:
                 kurucu = UygulamaKurucu(numara, basliklar)
                 kurucu.kur(tekrar_sayisi=1)
-            time.sleep(60)
+            time.sleep(20)
     except Exception as e:
         print("\x1b[1;31mIP Ban Yedin Vpn Açıp Tekrar Dene ⛔")
 
@@ -141,5 +129,5 @@ if __name__ == "__main__":
     else:
         print("\x1b[1;32m\n📞 Arama Gönderiliyor,Bekleyiniz...")
 
-        print("🔄 60 Saniye Sonra Tekrar Gönderilecektir ")
+        print("🔄 20 Saniye Sonra Tekrar Gönderilecektir ")
         numaralari_isle(numaralar)
