@@ -2,12 +2,12 @@ merhaba bu bir arama yani call-bonber kodudur tamemen alıntıdır.
 
 ### kurulum
 
-""git clone https://github.com/Heckerandseher/call-bomber.git
+git clone https://github.com/Heckerandseher/call-bomber.git
 
 
-"" cd call-bomber
+ cd call-bomber
 
-"" python3 callbomber.py
+ python3 callbomber.py
 
 ## nasıl kullanılır
 
